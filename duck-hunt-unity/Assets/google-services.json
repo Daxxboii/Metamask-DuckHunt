@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "368581434742",
+    "firebase_url": "https://carrom-262ba-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "carrom-262ba",
+    "storage_bucket": "carrom-262ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368581434742:android:f9d2de931e2099d17b2e57",
+        "android_client_info": {
+          "package_name": "com.LWS.CarromMultiplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368581434742-4e2lqefnd4d5fk2erdseaa4tve3cg9jl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.LWS.CarromMultiplayer",
+            "certificate_hash": "f555d707c95bfd9727a1c43b67e355af4b570669"
+          }
+        },
+        {
+          "client_id": "368581434742-vlgd045hk8tkr6k9ujtb148u3mgkeuef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJH-qM5SR53juML0sPwO891u8qxUqhub4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368581434742-vlgd045hk8tkr6k9ujtb148u3mgkeuef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
