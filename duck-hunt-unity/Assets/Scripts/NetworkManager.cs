@@ -53,6 +53,7 @@ public class NetworkManager : MonoBehaviour
     {
         LoadUserData("Coins", (coins) => { CoinsText.text = coins; this.coins = int.Parse(coins); });
     }
+
     public void Login()
     {
         auth.SignInWithCustomTokenAsync(PlayerPrefs.GetString("Account")).ContinueWith(task => {
@@ -103,7 +104,7 @@ public class NetworkManager : MonoBehaviour
 
                 if (snapshot.Value == null)
                 {
-                    SaveUserData(name, 0.ToString());
+                    SaveUserData(name, 500.ToString());
                     OnReturn(0.ToString());
                 }
                 else
