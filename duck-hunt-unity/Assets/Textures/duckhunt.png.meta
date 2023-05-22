@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -111,7 +129,7 @@ TextureImporter:
         x: 0
         y: 235
         width: 512
-        height: 228
+        height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,7 +1013,7 @@ TextureImporter:
         width: 56
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1016,7 +1034,7 @@ TextureImporter:
         width: 44
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1039,53 +1057,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dogsmile1: 1476941904
-      3: -1207466518
       0: 1613387192
-      dogTwoDuck: -187335473
-      duckblue4: 1552111538
-      dogOneDuck: 1198581567
-      duckWhiteLife: -965901684
-      background1: -2068174119
-      6: 1095692656
-      duckgreen9: 549399970
-      duckblue: -744626210
-      5: 918210490
-      dogsmile2: -942389835
-      duckbluedie: -206144861
-      duckgreen2: 2136976701
-      duckred2: -2001579262
-      50: -1937441146
-      duckblue1: -1329184734
-      150: -1259238182
-      duckRedLife: 105621220
-      duckblue5: 1222490290
+      1: -325806930
       100: 628829622
-      duckgreen1: -504336
+      150: -1259238182
+      2: -1058659334
+      3: -1207466518
+      4: -1799175952
+      5: 918210490
+      50: -1937441146
+      6: 1095692656
+      7: -1978566297
       8: -347766261
+      9: -1164036263
+      background1: -2068174119
+      dogOneDuck: 1198581567
+      dogTwoDuck: -187335473
+      dogsmile1: 1476941904
+      dogsmile2: -942389835
+      duckRedLife: 105621220
+      duckWhiteLife: -965901684
+      duckblue: -744626210
+      duckblue1: -1329184734
+      duckblue3: -135004624
+      duckblue4: 1552111538
+      duckblue5: 1222490290
+      duckblue6: 863949760
+      duckbluedie: -206144861
+      duckbluetouch: -84550081
+      duckgreen1: -504336
+      duckgreen2: 2136976701
+      duckgreen3: 1914444358
+      duckgreen4: 578066028
+      duckgreen5: 473567018
+      duckgreen6: 1143756094
+      duckgreen7: 1521475645
+      duckgreen8: -1402602321
+      duckgreen9: 549399970
       duckgreendie: -1673955832
       duckgreentouch: -1982199275
-      duckred1: 747021924
-      duckredtouch: -1070544957
-      2: -1058659334
-      duckgreen6: 1143756094
       duckred: 671591014
-      duckblue6: 863949760
-      4: -1799175952
-      9: -1164036263
-      duckgreen8: -1402602321
-      duckbluetouch: -84550081
-      duckgreen3: 1914444358
-      1: -325806930
-      7: -1978566297
+      duckred1: 747021924
+      duckred2: -2001579262
       duckreddie: -1398671927
-      duckgreen7: 1521475645
-      duckgreen5: 473567018
-      duckblue3: -135004624
-      duckgreen4: 578066028
-  spritePackingTag: 
+      duckredtouch: -1070544957
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
