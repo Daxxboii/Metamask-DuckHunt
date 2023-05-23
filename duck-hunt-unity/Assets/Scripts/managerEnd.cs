@@ -18,6 +18,7 @@ public class managerEnd : MonoBehaviour
         
         musique.Play();
         score = PlayerPrefs.GetInt("score").ToString();
+        NetworkManager.instance.SaveUserData("score", score);
         switch (score.Length)
         {
             case 1:
@@ -41,7 +42,7 @@ public class managerEnd : MonoBehaviour
 
         }
         highScore = PlayerPrefs.GetInt("HighScore").ToString();
-        NetworkManager.instance.SaveUserData("HighScore", highScore);
+        
         switch (highScore.Length)
         {
             case 1:
