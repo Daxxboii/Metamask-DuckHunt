@@ -42,8 +42,9 @@ public class NetworkManager : MonoBehaviour
             }
             else
             {
-                CoinsText.text = "0";
-                coins = 0;
+                InvokeRepeating("UpdateCoins", 1, 5);
+               // CoinsText.text = "Not Signed in";
+               // coins = 0;
             }
         }
     }
@@ -56,7 +57,7 @@ public class NetworkManager : MonoBehaviour
 
     public void Login()
     {
-        auth.SignInWithCustomTokenAsync(PlayerPrefs.GetString("Account")).ContinueWith(task => {
+        auth.SignInWithCustomTokenAsync(PlayerPrefs.GetString("Account")).ContinueWithOnMainThread(task => {
             if (task.IsCanceled)
             {
                 Debug.LogError("SignInWithCustomTokenAsync was canceled.");

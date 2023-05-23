@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ProjectConfigData
   m_EditorClassIdentifier: 
   projectID: 1a84678d-1f30-45b7-9d71-f42176ec7906
-  chainID: 97
-  chain: Binance
+  chainID: 56
+  chain: BNB
   network: Testnet
   rpc: Please Enter Your RPC

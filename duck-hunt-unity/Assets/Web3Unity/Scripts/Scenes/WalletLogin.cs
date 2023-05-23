@@ -11,6 +11,7 @@ public class WalletLogin : MonoBehaviour
     ProjectConfigScriptableObject projectConfigSO = null;
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
         // change this if you are implementing your own sign in page
         Web3Wallet.url = "https://chainsafe.github.io/game-web3wallet/";
         // loads the data saved from the editor config
@@ -44,7 +45,7 @@ public class WalletLogin : MonoBehaviour
         {
             // save account
             PlayerPrefs.SetString("Account", account);
-            PlayerPrefs.SetInt("RememberMe", 1);
+            //PlayerPrefs.SetInt("RememberMe", 1);
             print("Account: " + account);
             // load next scene
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
