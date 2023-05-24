@@ -31,12 +31,11 @@ public class start : MonoBehaviour
         yield return new WaitForSeconds(0.5F);
         if (NetworkManager.instance.coins > 0) { 
             SceneManager.LoadScene("Main");
-            NetworkManager.instance.LoadUserData("Coins", (value) => 
+           /* NetworkManager.instance.LoadUserData("Coins", (value) => 
             {
                 int _coins = int.Parse(value) - 20;
                 NetworkManager.instance.SaveUserData("Coins",_coins.ToString());
-            });
-        
+            });*/
         }
      }
 }
