@@ -18,6 +18,7 @@ public class managerEnd : MonoBehaviour
         
         musique.Play();
         score = PlayerPrefs.GetInt("score").ToString();
+
         NetworkManager.instance.SaveUserData("score", score);
         switch (score.Length)
         {

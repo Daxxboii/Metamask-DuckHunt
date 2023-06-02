@@ -29,7 +29,8 @@ public class start : MonoBehaviour
      IEnumerator Timer(){
         musique.Play();
         yield return new WaitForSeconds(0.5F);
-        if (NetworkManager.instance.coins > 0) { 
+       // if (NetworkManager.instance.coins > 0)
+         { 
             SceneManager.LoadScene("Main");
            /* NetworkManager.instance.LoadUserData("Coins", (value) => 
             {
